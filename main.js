@@ -2,13 +2,14 @@ function loginNow() {
      var user = document.getElementById("usernameEnter").value;
      var pass = document.getElementById("passwordEnter").value;
 
-     // Checks if user has entered a username and passowrd
      switch (true) {
-          case (user === "" || pass === ""):
-               alert("Please fill in both username and password fields.");
-               break;
-          default:
+          // Checks if user inputted correct username and password
+          case (user === "Radiant" && pass === "2345"):
                window.location.href = "notebook.html";
+               break;
+
+          default:
+               alert("Incorrect username or password.");
                break;
      }
 }
